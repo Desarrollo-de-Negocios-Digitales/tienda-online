@@ -23,7 +23,7 @@
             formControlName="password"
             class="w-full"
             placeholder="Contraseña" 
-            required pattern="^(?=.*[a-z])(?=.*[A-Z]).{8,}$"
+            required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$"
             />        
         </div>
         <small *ngIf="password.invalid && (password.dirty || password.touched)" class="block p-error">
