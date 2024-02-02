@@ -29,7 +29,8 @@
         <small *ngIf="password.invalid && (password.dirty || password.touched)" class="block p-error">
           <div *ngIf="password.errors?.['required']">Ingrese Contraseña</div>
           <div *ngIf="password.errors?.['password']">Contraseña Incorrecta</div>
-          <div *ngIf="password.errors?.['pattern']">La contraseña debe tener al menos 8 caracteres, una letra minúscula y una letra mayúscula</div>
+          <div *ngIf="password.errors?.['pattern']">La contraseña de al menos 8 caracteres, un caracter especial,
+             una minúscula y una mayúscula</div>
         </small>
         <p-button label="Ingresar" styleClass="w-full" [disabled]="loginForma.invalid"></p-button>
         <div class="mt-2">
