@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "Fullname": "Alma Daniela Serna Camarillo",
+      "email": "danemon@gmail.com",
+      "password": "1234567",
+      "id": "8201"
+    },
+    {
+      "id": "c65f",
+      "fullname": "Alma Gisela Serna",
+      "email": "asernacamarillo@gmail.com",
+      "password": "Aa*12345"
+    },
+    {
+      "id": "1b39",
+      "fullname": "Diana Baeza",
+      "email": "diana@gmail.com",
+      "password": "Ae$00000"
+    },
+    {
+      "id": "3fc0",
+      "fullname": "Alma Daniela Serna Camarillo",
+      "email": "almascamarillo1999@gmail.com",
+      "password": "Gg#00000"
+    },
+    {
+      "id": "961c",
+      "fullname": "Profe Barrón ",
+      "email": "barron@utng.edu.mx",
+      "password": "Aa#11111"
+    }
+  ]
+}

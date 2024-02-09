@@ -1,4 +1,4 @@
-<form [formGroup]="loginForma">
+<form [formGroup]="loginForma" (ngSubmit)="login()">
     <p-card header="Ingresar al Sistema" [style]="{width: '360px'}">
         <div class="field">
             <label for="email">Correo Electrónico</label>
@@ -29,10 +29,9 @@
         <small *ngIf="password.invalid && (password.dirty || password.touched)" class="block p-error">
           <div *ngIf="password.errors?.['required']">Ingrese Contraseña</div>
           <div *ngIf="password.errors?.['password']">Contraseña Incorrecta</div>
-          <div *ngIf="password.errors?.['pattern']">La contraseña de al menos 8 caracteres, un caracter especial,
-             una minúscula y una mayúscula</div>
+          <div *ngIf="password.errors?.['pattern']">Contraseña requerida</div>
         </small>
-        <p-button label="Ingresar" styleClass="w-full" [disabled]="loginForma.invalid"></p-button>
+        <p-button label="Ingresar" styleClass="w-full" [disabled]="loginForma.invalid" type="submit"></p-button>
         <div class="mt-2">
             ¿No tienes cuenta? <a routerLink="/register">Registrate</a>
 
